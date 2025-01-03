@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dazzle Den</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+        
+        /* Contact Us Section */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 60px 20px;
+            background-color: white;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9MWX3L4szTnTlqQk-gjLa-YGGfJYFGjJKw&s');
+        background-repeat: no-repeat;
+    background-size: cover;}
+
+        .contact-form {
+            width: 50%;
+            padding: 40px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .contact-form h2 {
+            font-size: 2.5em;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .contact-form button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #000000;
+        }
+
+        .contact-info {
+            width: 40%;
+            padding: 20px;
+        }
+
+        .contact-info h3 {
+            font-size: 2em;
+            color: #000000;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            font-size: 1.2em;
+            padding-left: 20px;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info ul li i {
+            color: #000000;
+            margin-right: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .contact-form,
+            .contact-info {
+                width: 100%;
+            }
+
+            .contact-form button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Dazzle Den</h1>
+        <p>Contact Us - We would love to hear from you!</p>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Get In Touch</h2>
+            <form action="#" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Our Information</h3>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Dazzle St, Fashion City, FC 56789</li>
+                <li><i class="fas fa-phone-alt"></i> (123) 456-7890</li>
+                <li><i class="fas fa-envelope"></i> support@dazzleden.com</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dazzle Den. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

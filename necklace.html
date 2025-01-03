@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Necklace Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #000000;
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            color: #6c5b7b;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .navbar-nav .nav-link {
+            color: #ecf0f1 !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #6c5b7b !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://img.freepik.com/free-photo/shiny-gemstone-drop-necklace-black-background-generated-by-ai_188544-14020.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #f0f0f0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 60px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #f0dfe2;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .hero .btn-primary {
+            background-color: #411c5a;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .hero .btn-primary:hover {
+            background-color: #000000;
+        }
+
+        /* Price Range Filter */
+        .price-range {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .price-range h3 {
+            font-size: 24px;
+            color: #000000;
+        }
+        .price-range .range-input {
+            width: 100%;
+        }
+
+        /* Product Section */
+        .catalog {
+            padding: 50px 20px;
+            text-align: center;
+            animation: slideIn 2s ease-out;
+        }
+        .catalog h2 {
+            font-size: 36px;
+            color: #000000;
+            margin-bottom: 50px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 15px;
+        }
+        .product-card .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        .product-card .card-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #000000;
+        }
+        .product-card .card-text {
+            font-size: 18px;
+            color: #e74c3c;
+        }
+        .product-card .btn-info {
+            background-color: #000000;
+            border-radius: 25px;
+            padding: 10px 30px;
+            color: white;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .product-card .btn-info:hover {
+            background-color: #000000;
+        }
+        .product-card .btn-secondary {
+            background-color: #000000;
+            border-radius: 25px;
+            padding: 10px 30px;
+            color: white;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .product-card .btn-secondary:hover {
+            background-color: #000000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }http://127.0.0.1:3000/one.html#
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">NecklaceShop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./one.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./one.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactus.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./login.html">login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Elegance in Every Necklace</h1>
+        <p>Discover exquisite necklaces for every occasion.</p>
+        <a href="#catalog" class="btn btn-primary">Browse Collection</a>
+    </div>
+
+    <!-- Price Range Filter -->
+    <div class="container price-range">
+        <h3>Filter by Price</h3>
+        <input type="range" min="0" max="500" value="100" class="range-input" id="priceRange" oninput="updatePriceRange()">
+        <p>Price: $<span id="priceValue">100</span></p>
+    </div>
+
+    <!-- Product Catalog -->
+    <div class="container catalog" id="catalog">
+        <h2>Our Latest Necklaces</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="data:image/jpeg;base64,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" alt="Necklace 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Gold Pendant Necklace</h5>
+                        <p class="card-text">₹18,000.00</p>
+                        <a href="./pay.html" class="btn btn-info">Buy Now</a>
+                        <a href="./add to cart.html" class="btn btn-secondary">Add to Cart</a> 
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXsJNlrFJYlNuqnIUAdOioBkRtojYH1YdgA&s" alt="Necklace 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Sapphire Statement Necklace</h5>
+                        <p class="card-text">₹14,500</p>
+                        <a href="./pay.html" class="btn btn-info">Buy Now</a>
+                        <a href="./add to cart.html" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgeGSlQ55S7BlU0kk5-ZVYF6nlGsCk_Tltrw&s" alt="Necklace 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Diamond Heart Necklace</h5>
+                        <p class="card-text">₹35,000</p>
+                        <a href="./pay.html" class="btn btn-info">Buy Now</a>
+                        <a href="./add to cart.html" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NecklaceShop. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        function updatePriceRange() {
+            let price = document.getElementById('priceRange').value;
+            document.getElementById('priceValue').textContent = price;
+        }
+    </script>
+
+</body>
+</html>
